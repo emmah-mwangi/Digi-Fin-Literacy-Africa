@@ -129,19 +129,6 @@ Digi Fin Literacy Africa seeks to bridge the digital and financial knowledge gap
 * Build sustainable entrepreneurial ventures.
 
    
-
-  Version Control Strategy
-
-This project follows professional Git and GitHub practices:
-
-* Incremental development commits.
-* Meaningful commit messages.
-* Continuous repository updates.
-* Minimum of 34 commits before final submission.
-* Development timeline from 15 June 2026 to 28 June 2026.
-
-   
-
   Author
 
    Mwangi Emmah
