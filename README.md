@@ -151,7 +151,7 @@ This project is licensed under the MIT License.
 
 GitHub Repository:
 
-https://github.com/emmah mwangi/Digi Fin Literacy Africa
+https://github.com/emmah-mwangi/Digi-Fin-Literacy-Africa.git
 
    
 
