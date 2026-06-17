@@ -3,219 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mission, Vision, and Story of Digi-Fin Literacy Africa — equipping Kenyan youth, individuals, and businesses with digital financial literacy, data skills, and online safety." />
-    <title>About Us | Mission, Vision & Story - Digi Fin Literacy Africa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* Fallback component styling for design cohesion */
-        .page-hero { background: #111; color: #fff; padding: 60px 0; }
-        .section-pad { padding: 60px 0; }
-        .section-pad-sm { padding: 40px 0; }
-        .section-divider { width: 50px; height: 3px; background: #28a745; margin: 15px 0; }
-        .feature-card { padding: 25px; border-radius: 8px; border: 1px solid #eee; background: #fff; transition: transform 0.2s; }
-        .feature-card:hover { transform: translateY(-5px); }
-        .df-card-icon { font-size: 2.5rem; display: inline-block; margin-bottom: 15px; color: #28a745; }
-        .btn-primary-df { background: #fff; color: #111; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn-outline-df { border: 1px solid #fff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
-        .btn-primary-df:hover { background: #eee; }
-        .btn-outline-df:hover { background: rgba(255,255,255,0.1); }
-        .social-links a { color: #fff; margin-right: 15px; font-size: 1.25rem; text-decoration: none; }
-        footer { background: #1a1a1a; color: #ccc; padding: 50px 0 20px; font-size: 0.9rem; }
-        footer a { color: #fff; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-    </style>
+    <meta name="description" content="Learn about Digi-Fin Literacy Africa — our mission, vision, story, values, and the team behind Africa's digital and financial literacy movement.">
+    <title>About Us | Digi-Fin Literacy Africa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <span> </span> Digi Fin Literacy Africa
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Toggle navigation</span>
+            <a class="navbar-brand fw-bold" href="index.html">Digi-Fin Literacy Africa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="programs.html">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="succes-stories.html">Success Stories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogs.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="succes-stories.html">Success Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="page-hero bg-dark text-white text-center">
+    <!-- HERO -->
+    <section class="about-hero">
         <div class="container">
-            <h1 class="display-5 fw-bold">Our Profile</h1>
-            <p class="lead max-width-md mx-auto mt-3">Discover the core mission, long-term vision, and ongoing story behind Digi-Fin Literacy Africa.</p>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge">About Digi-Fin Literacy Africa</span>
+                    <h1 class="mt-3">We Exist Because Financial Freedom Should Never Be a Privilege.</h1>
+                    <p class="mt-4">
+                        Digi-Fin Literacy Africa is a Pan-African initiative empowering individuals, youth, entrepreneurs and communities with practical digital skills, financial literacy and online safety knowledge needed to thrive in today's economy.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a href="programs.html" class="btn btn-primary btn-lg">Explore Programs</a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg">Partner With Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="../images/Digi-Fin-Literacy-Africa.jpeg" alt="Digi-Fin Literacy Africa Training" class="img-fluid rounded shadow">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- MISSION & VISION SECTION -->
-        <section class="section-pad bg-light">
-            <div class="container">
-                <div class="row g-4 justify-content-center">
-                    <!-- Our Mission Card -->
-                    <div class="col-md-6">
-                        <div class="feature-card h-100 p-5 shadow-sm bg-white text-center">
-                            <div class="df-card-icon text-success">
-                                <i class="bi bi-bullseye"></i>
-                            </div>
-                            <h2 class="fw-bold mb-3">Our Mission</h2>
-                            <div class="section-divider mx-auto"></div>
-                            <p class="text-muted lead">
-                                To empower youth, individuals, and businesses across Africa with practical digital literacy, data competencies, and robust financial skills. We strive to provide the tools necessary to navigate the modern tech landscape safely, securely, and productively.
-                            </p>
+    <!-- STATS STRIP -->
+    <section class="stats-strip">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <h2>2,500+</h2>
+                    <p>Learners Reached</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>12+</h2>
+                    <p>Counties Served</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>30+</h2>
+                    <p>Workshops Delivered</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>38%</h2>
+                    <p>Average Income Growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge">Our Story</span>
+                    <h2 class="mt-3">From a WhatsApp Group to a Continental Movement</h2>
+                    <p class="mt-3">
+                        What began as informal sessions teaching young Kenyans how to safely use mobile money evolved into a growing digital and financial literacy movement reaching communities across Africa.
+                    </p>
+                    <p>
+                        Today, Digi-Fin Literacy Africa collaborates with schools, SACCOs, fintech companies, NGOs, youth groups and entrepreneurs to make modern financial tools accessible, practical and understandable.
+                    </p>
+                    <p>
+                        We believe Africa's next economic leap will be driven by digitally fluent citizens making confident financial decisions every day.
+                    </p>
+                    <div class="d-flex flex-wrap gap-4 mt-4 story-milestones">
+                        <div>
+                            <strong class="d-block text-primary">2021</strong>
+                            <small>Founded in Nairobi</small>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">2022</strong>
+                            <small>First 500 Learners</small>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">2023</strong>
+                            <small>Expanded to 8 Counties</small>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">2025</strong>
+                            <small>2,500+ Learners Reached</small>
                         </div>
                     </div>
-                    <!-- Our Vision Card -->
-                    <div class="col-md-6">
-                        <div class="feature-card h-100 p-5 shadow-sm bg-white text-center">
-                            <div class="df-card-icon text-success">
-                                <i class="bi bi-eye"></i>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../images/Digi-Fin-Literacy-Africa.jpeg" class="img-fluid rounded shadow" alt="Community Training Session">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="mission-vision section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Purpose</span>
+                <h2 class="mt-2">Mission &amp; Vision</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="mv-card">
+                        <div class="mv-icon"><i class="bi bi-bullseye"></i></div>
+                        <h3 class="mt-3">Our Mission</h3>
+                        <p class="mt-2">
+                            To empower youth, individuals and businesses across Africa with practical digital literacy, financial knowledge, cybersecurity awareness and data competencies needed to participate successfully in the modern economy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mv-card">
+                        <div class="mv-icon"><i class="bi bi-eye"></i></div>
+                        <h3 class="mt-3">Our Vision</h3>
+                        <p class="mt-2">
+                            To build an inclusive, digitally literate and financially empowered Africa where every individual and enterprise possesses the skills, confidence and opportunities required to thrive in the digital economy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">What Drives Us</span>
+                <h2 class="mt-2">Our Core Values</h2>
+                <p class="text-muted mx-auto" style="max-width:550px;">
+                    These principles guide everything we do — from how we design programs to how we engage our communities.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="bi bi-tools"></i></div>
+                        <h5 class="mt-3">Practicality</h5>
+                        <p>We prioritize real-world skills over theory, ensuring every lesson is immediately applicable.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="bi bi-hand-thumbs-up"></i></div>
+                        <h5 class="mt-3">Dignity</h5>
+                        <p>Empowerment should never feel like charity. We treat every learner as a capable professional.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="bi bi-people-fill"></i></div>
+                        <h5 class="mt-3">Community</h5>
+                        <p>Growth happens faster together. We build networks and peer-learning ecosystems.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="bi bi-lightbulb"></i></div>
+                        <h5 class="mt-3">Curiosity</h5>
+                        <p>Continuous learning drives innovation. We stay at the edge of technology and financial trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE OFFER -->
+    <section class="services section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="mt-2">Four Pillars. One Outcome: People in Control of Their Money.</h2>
+                <p class="text-muted mx-auto" style="max-width:550px;">
+                    Our programs are structured around four core service areas that together create lasting financial and digital empowerment.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">01</div>
+                        <h4 class="mt-3">Consulting</h4>
+                        <p>Personalized strategies helping individuals, SMEs and organizations leverage financial literacy and fintech tools effectively to achieve their goals.</p>
+                        <a href="programs.html" class="btn btn-sm btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">02</div>
+                        <h4 class="mt-3">Training &amp; Workshops</h4>
+                        <p>In-person and virtual sessions covering budgeting, AI, digital productivity, mobile money, cybersecurity and entrepreneurship.</p>
+                        <a href="programs.html" class="btn btn-sm btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <h4 class="mt-3">Resources &amp; Community</h4>
+                        <p>Free guides, templates, educational content and an active learning community across social platforms for continued growth.</p>
+                        <a href="resources.html" class="btn btn-sm btn-outline-primary mt-2">Browse Resources</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-card">
+                        <div class="service-number">04</div>
+                        <h4 class="mt-3">Partnerships</h4>
+                        <p>Collaborating with schools, SACCOs, fintechs, NGOs and government institutions to scale our impact across Africa.</p>
+                        <a href="contact.html" class="btn btn-sm btn-outline-primary mt-2">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY IT MATTERS -->
+    <section class="impact-banner section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge-light">Why It Matters</span>
+                    <h2 class="mt-3">Closing the Digital &amp; Financial Gap in Africa</h2>
+                    <p class="mt-3 opacity-90">
+                        As Africa becomes increasingly digital, financial opportunities are expanding rapidly. Yet millions remain excluded due to limited access to practical digital and financial education.
+                    </p>
+                    <p class="opacity-90">
+                        Digi-Fin Literacy Africa exists to ensure no one is left behind in the digital economy. Every workshop we run, every skill we teach, and every community we reach brings us closer to a financially empowered continent.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="impact-stat-card">
+                                <i class="bi bi-phone"></i>
+                                <h4>67%</h4>
+                                <p>of Africans use mobile money but lack financial management skills</p>
                             </div>
-                            <h2 class="fw-bold mb-3">Our Vision</h2>
-                            <div class="section-divider mx-auto"></div>
-                            <p class="text-muted lead">
-                                To foster an inclusive, digitally literate, and financially secure society where every individual and enterprise possesses the economic confidence, digital technical skills, and cyber hygiene to unlock boundless global opportunities.
-                            </p>
+                        </div>
+                        <div class="col-6">
+                            <div class="impact-stat-card">
+                                <i class="bi bi-wifi-off"></i>
+                                <h4>40%</h4>
+                                <p>of African youth lack basic digital literacy skills</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="impact-stat-card">
+                                <i class="bi bi-graph-up"></i>
+                                <h4>3x</h4>
+                                <p>income growth potential with combined digital and financial skills</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="impact-stat-card">
+                                <i class="bi bi-globe-africa"></i>
+                                <h4>54</h4>
+                                <p>African nations represent our long-term reach and mission scope</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- OUR STORY SECTION -->
-        <section class="section-pad bg-white">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <img src="../images/training.jpg" alt="Digi-Fin Literacy Africa interactive training session with Kenyan youth" class="img-fluid rounded shadow" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80'" />
+    <!-- MEET THE TEAM -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">The People Behind the Mission</span>
+                <h2 class="mt-2">Meet the Team</h2>
+                <p class="text-muted mx-auto" style="max-width:550px;">
+                    Passionate educators, technologists and community builders committed to transforming lives across Africa.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="team-avatar">EM</div>
+                        <h6 class="mt-3 mb-0">Emmah Mwangi</h6>
+                        <small class="text-primary">Founder &amp; Executive Director</small>
+                        <p class="mt-2 text-muted small">Computer Science student at Strathmore University with a passion for digital empowerment across Africa.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-2 team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <span class="text-uppercase text-success fw-bold tracking-wider small">Our Roots</span>
-                        <h2 class="fw-bold mt-2">The Story Behind Digi-Fin Literacy Africa</h2>
-                        <div class="section-divider"></div>
-                        <p class="text-muted mb-4 lead">
-                            As the dynamic economy across Kenya digitizes rapidly, navigating online spaces successfully requires more than just basic connectivity—it demands nuanced capability.
-                        </p>
-                        <p class="text-muted mb-4">
-                            Digi-Fin Literacy Africa was established to fill a crucial knowledge gap: building an integrated bridge connecting everyday digital tech execution directly with sound economic practices. We saw young professionals, vibrant informal businesses, and curious individuals missing out on the growing digital financial ecosystem simply due to a lack of structured, actionable guidance.
-                        </p>
-                        <p class="text-muted mb-4">
-                            Through targeted training initiatives, consulting partnerships, financial management systems guidance, and essential online cyber safety awareness programs, we turn digital uncertainty into structural financial independence. 
-                        </p>
-                        <p class="fw-bold text-success">
-                            Join us as we continue creating customized ecosystems where no one gets left behind. 
-                        </p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="team-avatar">AK</div>
+                        <h6 class="mt-3 mb-0">Amina Kariuki</h6>
+                        <small class="text-primary">Programs Lead</small>
+                        <p class="mt-2 text-muted small">Curriculum designer specializing in community-based financial education and adult learning methodologies.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-2 team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="team-avatar">JO</div>
+                        <h6 class="mt-3 mb-0">James Oduya</h6>
+                        <small class="text-primary">Digital Skills Trainer</small>
+                        <p class="mt-2 text-muted small">Certified cybersecurity and productivity trainer with experience in youth digital skills bootcamps.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-2 team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="team-avatar">FN</div>
+                        <h6 class="mt-3 mb-0">Faith Ndungu</h6>
+                        <small class="text-primary">Community &amp; Partnerships</small>
+                        <p class="mt-2 text-muted small">Builds and maintains relationships with NGOs, SACCOs and fintech companies to expand program reach.</p>
+                        <div class="d-flex justify-content-center gap-2 mt-2 team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Linktree Action Portal -->
-        <section class="section-pad-sm text-center bg-success text-white">
-            <div class="container">
-                <h3 class="fw-bold mb-3">Connect Globally With Our Movement</h3>
-                <p class="opacity-75 mx-auto mb-4" style="max-width: 520px;">Access all program portals, live workshop registers, updates, and materials instantly via our unified digital link hub.</p>
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="https://linktr.ee/digifinliteracyafrica" target="_blank" rel="noopener" class="btn-primary-df">Explore Our Linktree</a>
-                    <a href="contact.html" class="btn-outline-df">Get In Touch</a>
-                </div>
+    <!-- CTA -->
+    <section class="about-cta">
+        <div class="container text-center">
+            <span class="section-badge-light">Get Involved</span>
+            <h2 class="mt-3">Join the Movement</h2>
+            <p class="lead mt-3">Together, we can build a digitally skilled, financially empowered Africa. Whether you want to learn, volunteer or partner — there's a place for you here.</p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
+                <a href="contact.html" class="btn btn-light btn-lg">Work With Us</a>
+                <a href="programs.html" class="btn btn-outline-light btn-lg">Our Programs</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="fw-bold text-white mb-3"> Digi-Fin Literacy Africa</h5>
-                    <p class="small text-muted">Empowering Africa through essential digital skills and structural financial literacy. Master your digital workspace confidently.</p>
-                    <div class="social-links mt-3">
-                        <a href="https://www.instagram.com/digi.fin.literacy.africa" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/Digital%20Skills%20Squad" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.youtube.com/@Digi-FinLiteracyAfrica" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                        <a href="https://www.linkedin.com/company/digital-skills-squad/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://wa.me/254746960753" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Digi-Fin Literacy Africa</h5>
+                    <p>Turning digital skills into lasting financial freedom across Africa.</p>
+                    <div class="d-flex gap-3 mt-3 social-icons">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Gmail"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/digi.fin.literacy.africa/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/digi_fin_literacy_africa/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@Digi-FinLiteracyAfrica" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="text-uppercase text-white small fw-bold mb-3">Navigation</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="about.html">About Us</a></li>
-                        <li class="mb-2"><a href="programs.html">Programs</a></li>
-                        <li class="mb-2"><a href="resources.html">Resources</a></li>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="events.html">Events</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h6 class="text-uppercase text-white small fw-bold mb-3">Community</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="events.html">Events</a></li>
-                        <li class="mb-2"><a href="succes-stories.html">Stories</a></li>
-                        <li class="mb-2"><a href="blogs.html">Blogs</a></li>
-                        <li class="mb-2"><a href="https://linktr.ee/digifinliteracyafrica" target="_blank" rel="noopener">Linktree Hub</a></li>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-bold mb-3">More</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="succes-stories.html">Success Stories</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <h6 class="text-uppercase text-white small fw-bold mb-3">Contact Information</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2 d-flex align-items-center gap-2">
-                            <i class="bi bi-geo-alt text-white"></i> Nairobi, Nairobi County, Kenya
-                        </li>
-                        <li class="mb-2 d-flex align-items-center gap-2">
-                            <i class="bi bi-telephone text-white"></i> <a href="tel:+254746960753">+254 746 960 753</a>
-                        </li>
-                        <li class="mb-2 d-flex align-items-center gap-2">
-                            <i class="bi bi-envelope text-white"></i> <a href="mailto:digifinliteracyafrica@gmail.com">digifinliteracyafrica@gmail.com</a>
-                        </li>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="bi bi-geo-alt me-2"></i>Nairobi, Kenya</li>
+                        <li><i class="bi bi-telephone me-2"></i>+254 746 960 753</li>
+                        <li><i class="bi bi-envelope me-2"></i>digifinliteracyafrica@gmail.com</li>
                     </ul>
                 </div>
             </div>
-            <hr class="border-secondary mt-4 mb-3">
-            <div class="row small text-muted">
+            <hr class="mt-4">
+            <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    &copy; 2026 Digi-Fin Literacy Africa. All rights reserved.
+                    <p class="mb-0">© 2026 Digi-Fin Literacy Africa. All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    Built for digital enablement.
+                <div class="col-md-6 text-center text-md-end">
+                    <small>Built for Africa's digital future.</small>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
