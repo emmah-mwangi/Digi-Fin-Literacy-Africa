@@ -643,6 +643,11 @@ footer p, footer small, .badge-text p {
   margin: 0;
 }
 
+.author-avatar {
+  width: 48px;
+  height: 48px;
+}
+
 /* RESPONSIVE MEDIA QUERIES */
 @media(max-width: 768px) {
   .hero-headline {

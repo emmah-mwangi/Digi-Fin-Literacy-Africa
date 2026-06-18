@@ -405,6 +405,9 @@ footer p{
     margin:0;
 }
 
+.content-max-600 { max-width: 600px; }
+.newsletter-email { max-width: 400px; }
+
 /* RESPONSIVE */
 
 @media(max-width:768px){
