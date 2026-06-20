@@ -56,21 +56,22 @@ body{
 }
 
 .hero h1{
-    font-size:clamp(1.8rem, 4vw, 3rem);
+    font-size:clamp(2rem, 3vw, 2.8rem);
     font-weight:bold;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:1.05rem;
+    font-size:1.15rem;
     margin-bottom:30px;
     opacity:0.9;
 }
 
 .hero img{
-    width:100%;
-    max-width:100%;
-    height:auto;
+    max-height: 360px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .hero-trust{
@@ -122,7 +123,20 @@ body{
     margin-bottom:10px;
 }
 
-/* FEATURES */
+/* SECTION IMAGES — universal cap */
+.section-padding img.img-fluid,
+.about-preview img.img-fluid {
+    max-height: 340px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* HOW IT WORKS step image */
+.col-lg-5 img.img-fluid {
+    max-height: 320px;
+    object-fit: contain;
+}
 
 .features{
     padding:80px 0;
@@ -143,7 +157,7 @@ body{
 }
 
 .feature-card img{
-    height:clamp(140px, 20vw, 180px);
+    height:160px;
     object-fit:cover;
     width:100%;
     border-radius:8px;
@@ -155,7 +169,7 @@ body{
     margin-bottom:15px;
 }
 
-/* ABOUT */
+/* FEATURES */
 
 .about-preview{
     background:#f8fafc;
@@ -171,7 +185,7 @@ body{
     font-size:1rem;
 }
 
-/* IMPACT AREAS */
+/* ABOUT */
 
 .impact-card{
     padding:25px 15px;
@@ -205,7 +219,7 @@ body{
     font-size:0.9rem;
 }
 
-/* PROGRAMS */
+/* IMPACT AREAS */
 
 .program-card{
     border:none;
@@ -220,7 +234,7 @@ body{
 }
 
 .program-card-img{
-    height:clamp(160px, 22vw, 200px);
+    height:180px;
     object-fit:cover;
     width:100%;
 }
@@ -230,7 +244,7 @@ body{
     color:#0d6efd;
 }
 
-/* HOW IT WORKS */
+/* PROGRAMS */
 
 .step-card{
     padding:24px 20px;
@@ -253,7 +267,7 @@ body{
     line-height:1;
 }
 
-/* TESTIMONIALS */
+/* HOW IT WORKS */
 
 .testimonials{
     background:#f8fafc;
@@ -303,7 +317,7 @@ body{
     flex-shrink:0;
 }
 
-/* EVENTS */
+/* TESTIMONIALS */
 
 .event-card{
     display:flex;
@@ -356,13 +370,13 @@ body{
     margin-bottom:10px;
 }
 
-/* NEWSLETTER */
+/* EVENTS */
 
 .newsletter{
     background:#e8f4ff;
 }
 
-/* CTA */
+/* NEWSLETTER */
 
 .cta{
     background:linear-gradient(135deg,#1d4ed8,#2563eb);
@@ -490,7 +504,7 @@ footer p{
 }
 
 .mdm-carousel-img {
-    height: clamp(220px, 45vw, 500px);
+    height: clamp(220px, 30vw, 380px);
     object-fit: cover;
     border-radius: 12px;
     width: 100%;
@@ -697,9 +711,19 @@ footer p{
     .mdm-ctrl-icon{ width:34px; height:34px; font-size:1rem; }
 }
 
+/* Laptop breakpoint */
+@media(min-width:992px) and (max-width:1399px){
+    .hero{ padding:70px 0; }
+    .hero img{ max-height:380px; }
+    .mdm-carousel-img{ height:320px; }
+    .feature-card img{ height:145px; }
+    .program-card-img{ height:165px; }
+}
+
 /* Large screens / TV */
 @media(min-width:1400px){
     .container{ max-width:1200px; }
-    .hero{ padding:120px 0; }
-    .mdm-carousel-img{ height:540px; }
+    .hero{ padding:100px 0; }
+    .hero img{ max-height:440px; }
+    .mdm-carousel-img{ height:400px; }
 }
