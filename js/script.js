@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    DIGI-FIN LITERACY AFRICA — Main JavaScript
    ============================================ */
 
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load saved preference
   if (localStorage.getItem('darkMode') === 'true') {
     body.classList.add('dark-mode');
-    if (darkToggle) darkToggle.innerHTML = '☀️ Light';
+    if (darkToggle) darkToggle.textContent = '☀️ Light';
   }
 
   if (darkToggle) {
     darkToggle.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
       const isDark = body.classList.contains('dark-mode');
-      darkToggle.innerHTML = isDark ? '☀️ Light' : '🌙 Dark';
+      darkToggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
       localStorage.setItem('darkMode', isDark);
     });
   }
@@ -101,8 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (allValid) {
         // Simulate form submission
         const btn = contactForm.querySelector('[type="submit"]');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '⏳ Sending...';
+        const originalText = btn.textContent;
+        btn.textContent = '⏳ Sending...';
         btn.disabled = true;
 
         setTimeout(() => {
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
           contactForm.querySelectorAll('.form-control-custom').forEach(i => {
             i.classList.remove('is-valid', 'is-invalid');
           });
-          btn.innerHTML = originalText;
+          btn.textContent = originalText;
           btn.disabled = false;
           if (successMsg) {
             successMsg.style.display = 'block';

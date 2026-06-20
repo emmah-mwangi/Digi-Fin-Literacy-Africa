@@ -371,6 +371,12 @@ footer small{
 
 .content-max-550 { max-width: 550px; }
 
+.about-values-intro { max-width: 550px; margin-left: auto; margin-right: auto; }
+.about-values-img { object-fit: cover; max-height: 400px; }
+.about-services-intro { max-width: 550px; margin-left: auto; margin-right: auto; }
+.team-section { background: #f8f9fa; }
+.about-team-intro { max-width: 550px; margin-left: auto; margin-right: auto; }
+
 /* RESPONSIVE */
 
 @media(max-width:991px){

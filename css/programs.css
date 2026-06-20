@@ -445,3 +445,9 @@ footer small {
   .program-card-img{ height:165px; }
   .feature-card img{ height:145px; }
 }
+
+.programs-why-intro,
+.programs-allprograms-intro,
+.programs-howitworks-intro { max-width: 600px; margin-left: auto; margin-right: auto; }
+.programs-all-bg { background: #f8f9fa; }
+.programs-smart-bg { background: #f8f9fa; }

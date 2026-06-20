@@ -1,0 +1,239 @@
+/* =============================================
+   DARK MODE — Digi-Fin Literacy Africa
+   Applied via body.dark-mode class
+   ============================================= */
+
+/* TOGGLE BUTTON */
+#darkModeToggle {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+#darkModeToggle:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.7);
+    color: #fff;
+}
+
+/* ── BASE ── */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+/* ── NAVBAR ── */
+body.dark-mode .navbar {
+    background: #020617 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── HERO SECTIONS ── */
+body.dark-mode .hero,
+body.dark-mode .about-hero,
+body.dark-mode .programs-hero,
+body.dark-mode .contact-hero {
+    background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+/* ── PLAIN SECTIONS & BG-LIGHT ── */
+body.dark-mode .section-padding,
+body.dark-mode .bg-light,
+body.dark-mode .features,
+body.dark-mode .about-preview,
+body.dark-mode .mission-vision,
+body.dark-mode .services,
+body.dark-mode .testimonials,
+body.dark-mode .newsletter,
+body.dark-mode .team-section,
+body.dark-mode .programs-all-bg,
+body.dark-mode .programs-smart-bg,
+body.dark-mode .contact-info,
+body.dark-mode .partnership-section,
+body.dark-mode .faq-section,
+body.dark-mode .location-section {
+    background-color: #0f172a !important;
+}
+
+/* ── CARDS ── */
+body.dark-mode .feature-card,
+body.dark-mode .program-card,
+body.dark-mode .step-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .value-card,
+body.dark-mode .mv-card,
+body.dark-mode .service-card,
+body.dark-mode .team-card,
+body.dark-mode .info-card,
+body.dark-mode .partner-card,
+body.dark-mode .event-card,
+body.dark-mode .impact-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .card-body {
+    background-color: #1e293b;
+}
+
+/* ── IMPACT CARDS HOVER ── */
+body.dark-mode .impact-card:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+/* ── TEXT ── */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f1f5f9;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span {
+    color: #94a3b8;
+}
+
+body.dark-mode .text-muted {
+    color: #64748b !important;
+}
+
+body.dark-mode .text-dark {
+    color: #f1f5f9 !important;
+}
+
+/* ── STATS STRIP ── */
+body.dark-mode .stats-strip {
+    background: #1e3a5f;
+}
+
+body.dark-mode .stats {
+    background: #1e293b !important;
+}
+
+body.dark-mode .stat-box h2 {
+    color: #38bdf8;
+}
+
+/* ── SECTION BADGE ── */
+body.dark-mode .section-badge {
+    background: #1e3a5f;
+    color: #38bdf8;
+}
+
+/* ── ACCORDION ── */
+body.dark-mode .accordion-item {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .accordion-button {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #0f2a47;
+    color: #38bdf8;
+}
+
+body.dark-mode .accordion-button::after {
+    filter: invert(1);
+}
+
+body.dark-mode .accordion-body {
+    background-color: #1e293b;
+    color: #94a3b8;
+}
+
+/* ── FORMS ── */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #1e293b;
+    border-color: #0d6efd;
+    color: #f1f5f9;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #475569;
+}
+
+body.dark-mode .form-label {
+    color: #94a3b8;
+}
+
+/* ── NEWSLETTER ── */
+body.dark-mode .newsletter {
+    background: #0f172a !important;
+}
+
+/* ── MDM CAROUSEL ── */
+body.dark-mode .mdm-carousel-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+body.dark-mode .mdm-thumb {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .mdm-thumb span {
+    color: #94a3b8;
+}
+
+/* ── FOOTER (already dark, just tweak) ── */
+body.dark-mode footer {
+    background: #020617;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── WORKSHOP BOOKING ── */
+body.dark-mode .workshop-booking {
+    background: linear-gradient(135deg, #0f2a47, #0f172a);
+}
+
+/* ── GOOGLE MAP IFRAME ── */
+body.dark-mode .map-iframe {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* ── SCROLLBAR ── */
+body.dark-mode ::-webkit-scrollbar {
+    width: 8px;
+}
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #0d6efd;
+}

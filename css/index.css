@@ -454,6 +454,14 @@ footer p{
 
 .content-max-600 { max-width: 600px; }
 .newsletter-email { max-width: 400px; }
+.newsletter-email-input { max-width: 400px; }
+.index-why-intro,
+.index-impact-intro,
+.index-programs-intro,
+.index-howitworks-intro,
+.index-mdm-intro,
+.index-testimonials-intro,
+.index-events-intro { max-width: 600px; margin-left: auto; margin-right: auto; }
 
 /* DE CARD CAROUSEL */
 
