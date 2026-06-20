@@ -243,7 +243,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // ─── 10. BACK TO TOP ──────────────────────────────────────────────
+  // ─── 10. MDM CAROUSEL THUMBNAIL SYNC ──────────────────────────────
+  const mdmCarouselEl = document.getElementById('mdmCarousel');
+  const mdmThumbs = document.querySelectorAll('.mdm-thumb');
+
+  if (mdmCarouselEl && mdmThumbs.length) {
+    // Thumbnail click -> slide to that index
+    mdmThumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const index = parseInt(thumb.dataset.index, 10);
+        bootstrap.Carousel.getInstance(mdmCarouselEl)?.to(index);
+      });
+    });
+
+    // Carousel slide -> update active thumbnail
+    mdmCarouselEl.addEventListener('slid.bs.carousel', (e) => {
+      mdmThumbs.forEach(t => t.classList.remove('active'));
+      const active = document.querySelector(`.mdm-thumb[data-index="${e.to}"]`);
+      if (active) active.classList.add('active');
+    });
+  }
+
+  // ─── 11. BACK TO TOP ──────────────────────────────────────────────
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
     window.addEventListener('scroll', () => {
