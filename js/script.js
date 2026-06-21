@@ -267,10 +267,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── 11. BACK TO TOP ──────────────────────────────────────────────
   const backToTop = document.getElementById('backToTop');
   if (backToTop) {
-    window.addEventListener('scroll', () => {
-      backToTop.style.opacity = window.scrollY > 400 ? '1' : '0';
-      backToTop.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
-    }, { passive: true });
+    const toggleBackToTop = () => {
+      const isVisible = window.scrollY > 400;
+      backToTop.classList.toggle('visible', isVisible);
+      backToTop.setAttribute('aria-hidden', String(!isVisible));
+    };
+
+    toggleBackToTop();
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 

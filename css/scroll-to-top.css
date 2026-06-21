@@ -1,0 +1,61 @@
+/* Scroll-to-top button */
+#backToTop {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.35);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#backToTop:hover,
+#backToTop:focus-visible {
+    background: #0b5ed7;
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.5);
+}
+
+#backToTop:focus-visible {
+    outline: 3px solid rgba(13, 110, 253, 0.35);
+    outline-offset: 3px;
+}
+
+body.dark-mode #backToTop {
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.28);
+}
+
+body.dark-mode #backToTop:hover,
+body.dark-mode #backToTop:focus-visible {
+    background: #7dd3fc;
+}
+
+@media (max-width: 576px) {
+    #backToTop {
+        right: 20px;
+        bottom: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
