@@ -1,0 +1,219 @@
+:root {
+    --primary: #0d6efd;
+    --primary-dark: #1d4ed8;
+    --accent: #38bdf8;
+    --ink: #333333;
+    --muted: #64748b;
+    --soft: #f8fafc;
+    --surface-dark: #0f172a;
+    --surface-dark-muted: #1e293b;
+    --badge-bg: #e0f0ff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: #ffffff;
+}
+
+.navbar {
+    background: var(--surface-dark);
+    padding: 15px 0;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.16);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin-left: 10px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+.careers-hero {
+    padding: 80px 0;
+    color: #ffffff;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.84)),
+        url("../images/DIGITAL FINANCIAL LITERACY.jpeg") center/cover no-repeat;
+}
+
+.careers-hero h1 {
+    font-size: clamp(2.25rem, 4vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.careers-hero p {
+    max-width: 620px;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 0.45rem 0.75rem;
+    border-radius: 20px;
+    color: var(--primary);
+    background: var(--badge-bg);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-intro {
+    max-width: 680px;
+}
+
+.career-card,
+.role-card,
+.process-step {
+    border: 1px solid rgba(20, 33, 61, 0.09);
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.career-card {
+    padding: 32px;
+}
+
+.card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    color: #ffffff;
+    background: var(--primary);
+    font-size: 1.5rem;
+}
+
+.career-card h5,
+.role-card h5,
+.process-step h6 {
+    font-weight: 800;
+}
+
+.career-card p,
+.role-card p,
+.process-step p {
+    color: var(--muted);
+}
+
+.role-card {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.role-type {
+    align-self: flex-start;
+    margin-bottom: 18px;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    color: var(--primary);
+    background: var(--badge-bg);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.role-card ul {
+    margin: 0 0 24px;
+    padding-left: 1.15rem;
+    color: var(--muted);
+}
+
+.role-card .btn {
+    margin-top: auto;
+}
+
+.process-step {
+    min-height: 100%;
+    padding: 28px;
+}
+
+.process-step span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.careers-cta {
+    padding: 80px 0;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--primary-dark), #2563eb);
+}
+
+.careers-cta p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    padding: 56px 0 24px;
+    color: #cbd5e1;
+    background: var(--surface-dark);
+}
+
+footer h5,
+footer h6 {
+    color: #ffffff;
+}
+
+.footer-links a,
+.social-icons a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+    color: var(--accent);
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 0.65rem;
+}
+
+.social-icons a {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 991px) {
+    .careers-hero {
+        padding: 72px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-padding,
+    .careers-cta {
+        padding: 56px 0;
+    }
+
+    .careers-hero h1 {
+        font-size: 2.25rem;
+    }
+}
