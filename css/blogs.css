@@ -1,0 +1,313 @@
+/* =============================================
+   BLOGS PAGE — Digi-Fin Literacy Africa
+   ============================================= */
+
+/* BLOGS HERO */
+.blogs-hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 80px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs-hero h1 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.blogs-hero p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    max-width: 700px;
+}
+
+/* BLOG SECTION */
+.blog-section {
+    padding: 70px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-section.bg-light {
+    background: #f8f9fa;
+}
+
+/* BLOG CARD */
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.blog-card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.blog-card-body {
+    padding: 30px;
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.blog-meta i {
+    color: #0d6efd;
+    margin-right: 5px;
+}
+
+.blog-category {
+    display: inline-block;
+    background: #e0f0ff;
+    color: #0d6efd;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.blog-card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+.blog-content {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.blog-content h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.blog-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.blog-content p {
+    margin-bottom: 15px;
+}
+
+.blog-content ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.blog-content ul li {
+    margin-bottom: 10px;
+}
+
+.blog-content blockquote {
+    border-left: 4px solid #0d6efd;
+    padding: 15px 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    font-style: italic;
+    color: #555;
+    border-radius: 4px;
+}
+
+.blog-content strong {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.blog-content emoji {
+    font-size: 1.2rem;
+}
+
+/* AUTHOR SIGN-OFF */
+.blog-signoff {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #e9ecef;
+}
+
+.blog-signoff-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.blog-signoff-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d6efd, #2563eb);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.blog-signoff-text h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+.blog-signoff-text .author-title {
+    font-size: 0.9rem;
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.blog-signoff-text p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    font-style: italic;
+}
+
+/* BACK TO BLOGS BUTTON */
+.back-to-blogs {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: 0.2s;
+}
+
+.back-to-blogs:hover {
+    color: #0b5ed7;
+    gap: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 991px) {
+    .blog-section {
+        padding: 55px 0;
+    }
+    
+    .blogs-hero {
+        padding: 60px 0;
+    }
+    
+    .blog-card-image {
+        height: 240px;
+    }
+    
+    .blog-card-body {
+        padding: 25px;
+    }
+    
+    .blog-card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .blog-card-image {
+        height: 220px;
+    }
+    
+    .blog-card-body {
+        padding: 20px;
+    }
+    
+    .blog-card h2 {
+        font-size: 1.3rem;
+    }
+    
+    .blog-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .blog-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .blog-signoff-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .blog-section {
+        padding: 40px 0;
+    }
+    
+    .blogs-hero {
+        padding: 50px 0;
+    }
+    
+    .blogs-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .blog-card-image {
+        height: 200px;
+    }
+    
+    .blog-card h2 {
+        font-size: 1.2rem;
+    }
+    
+    .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+/* Laptop breakpoint */
+@media(min-width:992px) and (max-width:1399px) {
+    .blog-card-image {
+        height: 260px;
+    }
+}
+
+/* Large screens / TV */
+@media(min-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .blogs-hero {
+        padding: 100px 0;
+    }
+    
+    .blog-card-image {
+        height: 300px;
+    }
+}
