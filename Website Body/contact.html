@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -27,18 +28,19 @@
                     <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="succes-stories.html">Success Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="success-stories.html">Success Stories</a></li>
                     <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                     <li class="nav-item"><a class="nav-link active btn btn-primary text-white px-3 ms-2" href="contact.html">Contact Us</a></li>
                     <li class="nav-item d-flex align-items-center">
-                        <button id="darkModeToggle" aria-label="Toggle dark mode">  Dark</button>
+                        <button id="darkModeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- HERO -->
     <section class="contact-hero">
         <div class="container">
@@ -110,23 +112,23 @@
                     <form id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Full Name <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Your full name" required>
+                                <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your full name" required>
                                 <div class="invalid-feedback">Please enter your full name.</div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
                                 <div class="invalid-feedback">Please enter a valid email address.</div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Organization</label>
-                            <input type="text" class="form-control" id="organization" placeholder="Your organization (optional)">
+                            <label for="organization" class="form-label">Organization</label>
+                            <input type="text" class="form-control" id="organization" name="organization" placeholder="Your organization (optional)">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Inquiry Type <span class="text-danger">*</span></label>
-                            <select class="form-select" id="inquiryType" title="Inquiry Type" required>
+                            <label for="inquiryType" class="form-label">Inquiry Type <span class="text-danger">*</span></label>
+                            <select class="form-select" id="inquiryType" name="inquiryType" title="Inquiry Type" required>
                                 <option value="">Select Inquiry Type</option>
                                 <option>Program Enrollment</option>
                                 <option>Partnership</option>
@@ -138,8 +140,8 @@
                             <div class="invalid-feedback">Please select an inquiry type.</div>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Message <span class="text-danger">*</span></label>
-                            <textarea class="form-control" id="message" rows="6" placeholder="Tell us how we can help..." required></textarea>
+                            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell us how we can help..." required></textarea>
                             <div class="invalid-feedback">Please enter your message.</div>
                         </div>
                         <div id="formSuccess" class="alert alert-success d-none" role="alert">
@@ -313,7 +315,7 @@
                 <div class="col-6 col-md-2">
                     <h6 class="fw-bold mb-3">More</h6>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="succes-stories.html">Success Stories</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
                         <li><a href="blogs.html">Blog</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact Us</a></li>

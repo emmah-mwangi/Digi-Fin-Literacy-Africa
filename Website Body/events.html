@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | Digi-Fin Literacy Africa</title>
     <meta name="description" content="Explore Digi-Fin Literacy Africa webinars, forums, clinics and community events that build digital skills and financial confidence across Africa.">
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Local Stylesheets -->
     <link rel="stylesheet" href="../css/dark-mode.css">
     <link rel="stylesheet" href="../css/scroll-to-top.css">
     <link rel="stylesheet" href="../css/events.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
@@ -37,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                     <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="succes-stories.html">Success Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="success-stories.html">Success Stories</a></li>
                     <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
@@ -49,13 +43,14 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="events-hero d-flex align-items-center position-relative">
         <div class="container py-5 text-white position-relative z-1">
             <div class="row align-items-center g-5">
                 <div class="col-lg-8">
-                    <span class="badge bg-accent text-dark mb-3 px-3 py-2 text-uppercase fw-bold letter-spacing">Connect &amp; Learn</span>
-                    <h1 class="display-3 fw-extrabold text-white mb-3">Our Webinars, Forums &amp; Community Clinics</h1>
+                    <span class="badge bg-accent text-dark mb-3 px-3 py-2 text-uppercase fw-bold letter-spacing">Connect & Learn</span>
+                    <h1 class="display-3 fw-extrabold text-white mb-3">Our Webinars, Forums & Community Clinics</h1>
                     <p class="lead text-gray mb-4">Empowering individuals, youth, and small businesses across Africa with critical digital financial literacy. Explore our upcoming virtual dialogues and regional community programs.</p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#upcoming" class="btn btn-accent btn-lg px-4 py-3 fw-semibold">Browse Events</a>
@@ -85,7 +80,7 @@
     </section>
 
     <!-- Main Content -->
-    <main class="py-5" style="background-color: #f8fafc;">
+    <section class="py-5" style="background-color: #f8fafc;">
         
         <!-- Search and Filter Bar -->
         <section class="container mb-5 mt-4 position-relative z-3">
@@ -94,7 +89,8 @@
                     <div class="col-md-4">
                         <div class="input-group">
                             <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-search"></i></span>
-                            <input type="text" class="form-control border-start-0" placeholder="Search event title, speaker or topic...">
+                            <label for="eventSearch" class="visually-hidden">Search events</label>
+                            <input type="text" id="eventSearch" name="eventSearch" class="form-control border-start-0" placeholder="Search event title, speaker or topic...">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -108,7 +104,7 @@
                     <div class="col-md-3">
                         <select class="form-select" aria-label="Filter by Topic">
                             <option selected>All Subjects</option>
-                            <option value="cybersec">Cyber Security &amp; Fraud</option>
+                            <option value="cybersec">Cyber Security & Fraud</option>
                             <option value="investing">Digital Investing</option>
                             <option value="youth">Youth Economy</option>
                             <option value="sme">Small Business Operations</option>
@@ -166,7 +162,7 @@
         <section id="upcoming" class="container py-4">
             <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-3">
                 <div>
-                    <h2 class="fw-bold text-dark-deep mb-1">Upcoming Events &amp; Interactive Learning</h2>
+                    <h2 class="fw-bold text-dark-deep mb-1">Upcoming Events & Interactive Learning</h2>
                     <p class="text-muted mb-0">Select and register for upcoming sessions hosted by regional finance and digital operations veterans.</p>
                 </div>
                 <div class="d-none d-md-block">
@@ -545,7 +541,7 @@
                     <div class="gallery-card overflow-hidden rounded shadow-sm">
                         <img src="../images/digital money forum 5.jpeg" class="img-fluid w-100 object-fit-cover gallery-img" alt="Digital money forum audience">
                         <div class="gallery-overlay p-4 text-white d-flex flex-column justify-content-end">
-                            <h5 class="fw-bold mb-1">Audience Forum Q&amp;A</h5>
+                            <h5 class="fw-bold mb-1">Audience Forum Q&A</h5>
                             <p class="small mb-0 opacity-80">Interactive Feedback Loop</p>
                         </div>
                     </div>
@@ -642,7 +638,8 @@
                     <div class="col-lg-5">
                         <form id="newsletterForm" class="row g-2">
                             <div class="col-sm-8">
-                                <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Subscriber Email">
+                                <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                                <input type="email" id="newsletterEmail" name="newsletterEmail" class="form-control" placeholder="Enter your email address" required aria-label="Subscriber Email">
                             </div>
                             <div class="col-sm-4 d-grid">
                                 <button class="btn btn-accent" type="submit">Subscribe</button>
@@ -667,24 +664,24 @@
                     <div class="modal-body p-4">
                         <div class="mb-3">
                             <label for="eventSelect" class="form-label text-muted small fw-semibold">Selected Session</label>
-                            <input type="text" class="form-control" id="eventSelect" readonly>
+                            <input type="text" class="form-control" id="eventSelect" name="eventSelect" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="fullName" class="form-label text-muted small fw-semibold">Full Name *</label>
-                            <input type="text" class="form-control" id="fullName" required placeholder="First and last name">
+                            <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="First and last name">
                         </div>
                         <div class="mb-3">
                             <label for="emailAddress" class="form-label text-muted small fw-semibold">Email Address *</label>
-                            <input type="email" class="form-control" id="emailAddress" required placeholder="yourname@domain.com">
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress" required placeholder="yourname@domain.com">
                         </div>
                         <div class="mb-3">
                             <label for="phoneNumber" class="form-label text-muted small fw-semibold">WhatsApp / Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" placeholder="+254 700 000000">
+                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+254 700 000000">
                         </div>
                         <div class="row">
                             <div class="col-sm-6 mb-3">
                                 <label for="userRole" class="form-label text-muted small fw-semibold">Profile Type</label>
-                                <select class="form-select" id="userRole">
+                                <select class="form-select" id="userRole" name="userRole">
                                     <option selected>Student</option>
                                     <option>Business Owner</option>
                                     <option>Fintech/Finance Specialist</option>
@@ -694,11 +691,11 @@
                             </div>
                             <div class="col-sm-6 mb-3">
                                 <label for="locationCountry" class="form-label text-muted small fw-semibold">Country</label>
-                                <input type="text" class="form-control" id="locationCountry" placeholder="Kenya, Nigeria, etc.">
+                                <input type="text" class="form-control" id="locationCountry" name="locationCountry" placeholder="Kenya, Nigeria, etc.">
                             </div>
                         </div>
                         <div class="form-check my-3">
-                            <input class="form-check-input" type="checkbox" value="" id="newsletterConsent" checked>
+                            <input class="form-check-input" type="checkbox" value="" id="newsletterConsent" name="newsletterConsent" checked>
                             <label class="form-check-label text-muted small" for="newsletterConsent">
                                 Subscribe to monthly educational newsletters and event schedules.
                             </label>
@@ -742,7 +739,7 @@
                 <div class="col-6 col-md-2">
                     <h6 class="fw-bold mb-3">More</h6>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="succes-stories.html">Success Stories</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
                         <li><a href="blogs.html">Blog</a></li>
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
