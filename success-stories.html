@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/scroll-to-top.css">
 </head>
 <body>
-
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -31,6 +30,9 @@
                     <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                     <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <button id="darkModeToggle" type="button" aria-label="Toggle dark mode"></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -138,7 +140,7 @@
             <div class="text-center mb-5">
                 <span class="section-badge">Our Initiative</span>
                 <h2 class="mt-2">What is Skills Share Saturday?</h2>
-                <p class="text-muted mx-auto" style="max-width:700px;">
+                <p class="text-muted mx-auto success-stories-intro">
                     Skills Share Saturday is a community-driven initiative where we bring practical digital financial literacy skills directly to communities across Kenya. Every Saturday, we create safe spaces for learning, sharing, and growing together.
                 </p>
             </div>
@@ -178,7 +180,7 @@
             <div class="text-center mb-5">
                 <span class="section-badge">What Makes a Success Story</span>
                 <h2 class="mt-2">The Anatomy of a Great Success Story</h2>
-                <p class="text-muted mx-auto" style="max-width:700px;">
+                <p class="text-muted mx-auto anatomy-intro">
                     At Digi-Fin Literacy Africa, every success story follows a transformative journey from challenge to triumph through digital and financial literacy.
                 </p>
             </div>
@@ -218,7 +220,7 @@
             <div class="text-center mb-5">
                 <span class="section-badge">Community Champions</span>
                 <h2 class="mt-2">Meet Our Skills Share Saturday Facilitators</h2>
-                <p class="text-muted mx-auto" style="max-width:700px;">
+                <p class="text-muted mx-auto facilitators-intro">
                     Dedicated individuals who bring their expertise and passion to empower communities every Saturday.
                 </p>
             </div>
@@ -266,7 +268,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="impact-card text-center">
-                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; font-size: 1.5rem; font-weight: bold;">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-3 facilitator-join">
                             <i class="bi bi-person-plus"></i>
                         </div>
                         <p class="mb-0">Join Us</p>
@@ -311,7 +313,7 @@
             <div class="text-center mb-5">
                 <span class="section-badge">Testimonials</span>
                 <h2 class="mt-2">Voices from Skills Share Saturday</h2>
-                <p class="text-muted mx-auto" style="max-width:700px;">
+                <p class="text-muted mx-auto testimonials-intro">
                     Hear from community members whose lives have been transformed through our Skills Share Saturday sessions.
                 </p>
             </div>
@@ -546,12 +548,11 @@
     </footer>
 
     <!-- SCROLL TO TOP -->
-    <button id="backToTop" aria-label="Scroll to top" title="Back to top">
+    <button id="backToTop" type="button" aria-label="Scroll to top" title="Back to top">
         <i class="bi bi-arrow-up"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
-
 </body>
 </html>

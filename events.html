@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="../css/events.css">
 </head>
 <body>
-     
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
@@ -36,7 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <button id="darkModeToggle" class="btn btn-outline-light btn-sm rounded-pill" aria-label="Toggle dark mode"></button>
+                        <button id="darkModeToggle" type="button" class="btn btn-outline-light btn-sm rounded-pill" aria-label="Toggle dark mode"></button>
                     </li>
                 </ul>
             </div>
@@ -80,8 +78,7 @@
     </section>
 
     <!-- Main Content -->
-    <section class="py-5" style="background-color: #f8fafc;">
-        
+    <section class="py-5 events-main-section">
         <!-- Search and Filter Bar -->
         <section class="container mb-5 mt-4 position-relative z-3">
             <div class="filter-wrapper p-4 bg-white rounded-4 shadow-sm border border-light">
@@ -111,7 +108,7 @@
                         </select>
                     </div>
                     <div class="col-md-2 d-grid">
-                        <button class="btn btn-dark py-2">Filter Results</button>
+                        <button type="button" class="btn btn-dark py-2">Filter Results</button>
                     </div>
                 </div>
             </div>
@@ -121,8 +118,8 @@
         <section class="container mb-5">
             <div class="card border-0 shadow-lg overflow-hidden featured-event-card">
                 <div class="row g-0">
-                    <div class="col-lg-6 position-relative" style="min-height: 350px;">
-                        <img src="images/DIGITAL MONEY FORUM EVENT.jpg" alt="Digital Money Forum Event" class="img-fluid h-100 w-100 object-fit-cover" style="position: absolute; inset: 0;">
+                    <div class="col-lg-6 position-relative featured-event-image">
+                        <img src="images/DIGITAL MONEY FORUM EVENT.jpg" alt="Digital Money Forum Event" class="img-fluid h-100 w-100 object-fit-cover">
                         <span class="badge bg-danger position-absolute top-0 start-0 m-4 px-3 py-2 text-uppercase fw-semibold shadow-sm">Physical Summit</span>
                     </div>
                     <div class="col-lg-6 bg-dark-deep text-white p-4 p-md-5 d-flex flex-column justify-content-center">
@@ -150,7 +147,7 @@
                         </div>
 
                         <div class="d-flex flex-wrap gap-3">
-                            <button class="btn btn-accent px-4 py-2" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Money Forum 2025 (Physical Summit)">Register Seat</button>
+                            <button type="button" class="btn btn-accent px-4 py-2" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Money Forum 2025 (Physical Summit)">Register Seat</button>
                             <a href="#agenda" class="btn btn-outline-light px-4 py-2">View Forum Schedule</a>
                         </div>
                     </div>
@@ -186,7 +183,7 @@
                             <p class="card-text text-muted flex-grow-1">Learn essential digital navigation, identity setup, and standard online verification protocols required to run mobile bank programs safely.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Skills Unlocked: Secure Foundations">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Skills Unlocked: Secure Foundations">Register</button>
                             </div>
                         </div>
                     </div>
@@ -207,7 +204,7 @@
                             <p class="card-text text-muted flex-grow-1">An essential workshop highlighting common socio-technical tactics used by digital scammers, including phishing, malware, and social engineering traps.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Mitigating Cyber Fraud in Digital Banking">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Mitigating Cyber Fraud in Digital Banking">Register</button>
                             </div>
                         </div>
                     </div>
@@ -228,7 +225,7 @@
                             <p class="card-text text-muted flex-grow-1">A tailored tactical interactive support session helping micro-merchants select secure payment systems, configure ledgers, and build operational trust.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="SME Digital Operations Clinic">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="SME Digital Operations Clinic">Register</button>
                             </div>
                         </div>
                     </div>
@@ -249,7 +246,7 @@
                             <p class="card-text text-muted flex-grow-1">Uncover investment principles using local micro-platforms and treasury channels. Focuses heavily on separating genuine ventures from unstable online platforms.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Investing in the Digital Age: Micro-Assets">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Investing in the Digital Age: Micro-Assets">Register</button>
                             </div>
                         </div>
                     </div>
@@ -270,7 +267,7 @@
                             <p class="card-text text-muted flex-grow-1">Examining local employment structures, digital gig platforms, remote contracting, and the practical financial tools necessary to scale small operations.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Youth and the Digital Economy Forum (Physical)">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Youth and the Digital Economy Forum (Physical)">Register</button>
                             </div>
                         </div>
                     </div>
@@ -291,7 +288,7 @@
                             <p class="card-text text-muted flex-grow-1">Empowering cooperative savings schemes, rural women associations, and informal market unions with tools to balance budgets and transact safely.</p>
                             <div class="pt-3 border-top d-flex justify-content-between align-items-center mt-auto">
                                 <span class="text-success small fw-semibold"><i class="bi bi-check-circle-fill"></i> Registrations Open</span>
-                                <button class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Skills for Financial Empowerment">Register</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registrationModal" data-event-title="Digital Skills for Financial Empowerment">Register</button>
                             </div>
                         </div>
                     </div>
@@ -330,7 +327,7 @@
                                 </div>
                                 <h4 class="agenda-card-title">Registration & Coffee networking</h4>
                             </div>
-                            <p class="agenda-card-text">Check-in desk registration at August 7th Memorial Park . Pick up tags, event programs, and interactive participant kits.</p>
+                            <p class="agenda-card-text">Check-in desk registration at August 7th Memorial Park. Pick up tags, event programs, and interactive participant kits.</p>
                             <div class="agenda-card-footer">
                                 <span class="agenda-location">
                                     <i class="bi bi-geo-alt"></i> August 7th Memorial Park  
@@ -448,7 +445,7 @@
             <div class="text-center mb-5">
                 <span class="text-muted text-uppercase small fw-bold tracking-wider">Our Community History</span>
                 <h2 class="fw-bold text-dark-deep mb-2">Experience Our Past Events</h2>
-                <p class="text-muted mx-auto max-width-600">A look back at moments from our previous seminars, community-led forums, and dynamic financial clinics across Sub-Saharan Africa.</p>
+                <p class="text-muted mx-auto" style="max-width: 600px;">A look back at moments from our previous seminars, community-led forums, and dynamic financial clinics across Sub-Saharan Africa.</p>
             </div>
 
             <div class="row g-4">
@@ -642,7 +639,7 @@
                                 <input type="email" id="newsletterEmail" name="newsletterEmail" class="form-control" placeholder="Enter your email address" required aria-label="Subscriber Email">
                             </div>
                             <div class="col-sm-4 d-grid">
-                                <button class="btn btn-accent" type="submit">Subscribe</button>
+                                <button type="submit" class="btn btn-accent">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -767,7 +764,7 @@
     </footer>
 
     <!-- SCROLL TO TOP -->
-    <button id="backToTop" aria-label="Scroll to top" title="Back to top">
+    <button id="backToTop" type="button" aria-label="Scroll to top" title="Back to top">
         <i class="bi bi-arrow-up"></i>
     </button>
 
