@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load saved preference
   if (localStorage.getItem('darkMode') === 'true') {
     body.classList.add('dark-mode');
-    if (darkToggle) darkToggle.textContent = '☀️ Light';
+    if (darkToggle) darkToggle.textContent = '  Light';
   }
 
   if (darkToggle) {
     darkToggle.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
       const isDark = body.classList.contains('dark-mode');
-      darkToggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+      darkToggle.textContent = isDark ? '  Light' : '  Dark';
       localStorage.setItem('darkMode', isDark);
     });
   }
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulate form submission
         const btn = contactForm.querySelector('[type="submit"]');
         const originalText = btn.textContent;
-        btn.textContent = '⏳ Sending...';
+        btn.textContent = '  Sending...';
         btn.disabled = true;
 
         setTimeout(() => {
@@ -277,5 +277,22 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', toggleBackToTop, { passive: true });
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
+
+});
+/* ─── PAGE TITLE ATTENTION ───────────────────────── */
+
+const originalTitle = document.title;
+
+document.addEventListener("visibilitychange", () => {
+
+    if (document.hidden) {
+
+        document.title = "  Come Back to Digi-Fin!";
+
+    } else {
+
+        document.title = originalTitle;
+
+    }
 
 });
